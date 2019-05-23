@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dl"
+    tools:context="com.example.lenovo.studio_c.activity.MainActivity">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  <View
+      android:background="@color/FFCDCDCE"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_1"
+      android:layout_below="@id/mains_tooblar"/>
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/mains_tooblar"
+      android:background="#FFFFFF"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_60">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/main_toobla_avatar"
+          android:layout_width="@dimen/dp_50"
+          android:layout_height="@dimen/dp_50"
+          android:src="@drawable/nn"/>
+
+      <ImageView
+          android:id="@+id/main_toobla_envelope"
+          android:src="@drawable/message"
+          android:layout_width="@dimen/dp_25"
+          android:layout_height="@dimen/dp_25"
+          android:layout_marginTop="@dimen/dp_10"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="@dimen/dp_30"/>
+
+      <ImageView
+          android:id="@+id/main_toobla_bell"
+          android:src="@drawable/lindang"
+          android:layout_width="@dimen/dp_25"
+          android:layout_height="@dimen/dp_25"
+          android:layout_marginTop="@dimen/dp_10"
+          android:layout_toLeftOf="@id/main_toobla_envelope"
+          android:layout_marginRight="@dimen/dp_30"/>
+
+    </RelativeLayout>
+
+
+  </android.support.v7.widget.Toolbar>
+
+  <android.support.design.widget.TabLayout
+      android:id="@+id/main_tablay"
+      android:layout_alignParentBottom="true"
+      app:tabMode="fixed"
+      android:background="@color/FFFFFF"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_60"/>
+
+  <View
+      android:background="@color/FFCDCDCE"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_1"
+      android:layout_above="@id/main_tablay"/>
+
+  <ImageView
+      android:src="@drawable/jia"
+      android:layout_width="@dimen/dp_50"
+      android:layout_height="@dimen/dp_50"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:background="@color/FFFFFF"
+      android:layout_marginBottom="@dimen/dp_30"/>
+
+  <FrameLayout
+      android:id="@+id/main_fragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/mains_tooblar"
+     android:layout_above="@+id/main_tablay"/>
+
+  </RelativeLayout>
+
+  <android.support.design.widget.NavigationView
+      android:id="@+id/main_navi"
+      android:layout_gravity="left"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <include android:id="@+id/head_include"
+        layout="@layout/head"/>
+
+  </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
