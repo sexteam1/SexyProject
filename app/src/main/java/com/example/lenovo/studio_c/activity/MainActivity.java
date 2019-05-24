@@ -1,5 +1,6 @@
 package com.example.lenovo.studio_c.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -199,6 +200,8 @@ public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
             case R.id.heads_relati:
                 break;
             case R.id.heads_card:
+                Intent intent = new Intent(this,CouponActivity.class);
+                startActivity(intent);
                 break;
             case R.id.heads_stroke:
                 break;

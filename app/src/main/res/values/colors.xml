@@ -7,6 +7,9 @@
     <color name="FFFF8400">#ff8400</color>
     <color name="FFFFFF">#FFFFFF</color>
     <color name="FFA4A4A5">#FFA4A4A5</color>
-
+    <color name="Orange">#FA6A14</color>
+    <color name="colorGray">#F0F0F0</color>
+    <color name="Gray">#999999</color>
+    <color name="white">#FFFFFF</color>
 
 </resources>
