@@ -37,7 +37,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
 
-
+//jjjjjjjjj
     @BindView(R.id.mains_tooblar)
     Toolbar mMainTooblar;
     @BindView(R.id.main_fragment)
