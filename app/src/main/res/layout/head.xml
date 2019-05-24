@@ -1,127 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/dp_10"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-       >
+        android:layout_height="wrap_content">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:src="@drawable/nn"
-        android:id="@+id/head_image"
-        android:layout_marginTop="@dimen/dp_29"
-        android:layout_width="@dimen/dp_80"
-        android:layout_height="@dimen/dp_80" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_29"
+            android:src="@drawable/nn" />
 
-    <TextView
-        android:text="@string/head_lin"
-        android:textSize="@dimen/sp_20"
-        android:textStyle="bold"
-        android:layout_marginTop="@dimen/dp_30"
-        android:layout_toRightOf="@+id/head_image"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="@string/head_lin"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
 
-    <TextView
-        android:text="@string/head_si"
-        android:textSize="@dimen/sp_13"
-        android:textColor="@color/FFA4A4A5"
-        android:layout_marginTop="@dimen/dp_70"
-        android:layout_toRightOf="@+id/head_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_70"
+            android:layout_toRightOf="@+id/head_image"
+            android:text="@string/head_si"
+            android:textColor="@color/FFA4A4A5"
+            android:textSize="@dimen/sp_13" />
 
         <ImageView
             android:id="@+id/imagess"
             android:layout_width="@dimen/dp_20"
             android:layout_height="@dimen/dp_20"
-            android:src="@drawable/icon_me_bianji"
-            android:background="@color/colorPrimary"
             android:layout_marginRight="@dimen/dp_5"
             android:layout_marginTop="@dimen/dp_105"
-            android:layout_toLeftOf="@+id/name" />
+            android:layout_toLeftOf="@+id/name"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/icon_me_bianji" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="编辑"
-            android:layout_marginTop="@dimen/dp_105"
             android:layout_alignParentRight="true"
-            android:textColor="@color/FFFF8400"/>
+            android:layout_marginTop="@dimen/dp_105"
+            android:text="编辑"
+            android:textColor="@color/FFFF8400" />
 
     </RelativeLayout>
 
-   <android.support.v7.widget.CardView
-       android:id="@+id/heads_relati"
-       android:layout_width="match_parent"
-       android:layout_height="@dimen/dp_130"
-       android:layout_marginTop="@dimen/sp_20"
-       app:cardCornerRadius="@dimen/dp_10"
-       app:cardUseCompatPadding="true"
-     >
+    <android.support.v7.widget.CardView
+        android:id="@+id/heads_relati"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginTop="@dimen/sp_20"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardUseCompatPadding="true">
 
-       <RelativeLayout
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:background="@color/FFFF8400">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/FFFF8400">
 
-           <TextView
-               android:id="@+id/head_mine"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="@dimen/dp_8"
-               android:layout_marginTop="@dimen/dp_8"
-               android:text="@string/headmine"
-               android:textColor="@color/FFFFFF"
-               android:textSize="@dimen/sp_13" />
+            <TextView
+                android:id="@+id/head_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/headmine"
+                android:textColor="@color/FFFFFF"
+                android:textSize="@dimen/sp_13" />
 
-           <TextView
-               android:id="@+id/qian"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_below="@+id/head_mine"
-               android:layout_centerHorizontal="true"
-               android:text="99"
-               android:textColor="@color/FFFFFF"
-               android:textSize="50sp" />
+            <TextView
+                android:id="@+id/qian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head_mine"
+                android:layout_centerHorizontal="true"
+                android:text="99"
+                android:textColor="@color/FFFFFF"
+                android:textSize="50sp" />
 
-           <TextView
-               android:id="@+id/yuan"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_below="@+id/head_mine"
-               android:layout_marginLeft="@dimen/dp_3"
-               android:layout_marginTop="@dimen/dp_30"
-               android:layout_toRightOf="@+id/qian"
-               android:text="元"
-               android:textColor="@color/FFFFFF" />
+            <TextView
+                android:id="@+id/yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/head_mine"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_toRightOf="@+id/qian"
+                android:text="元"
+                android:textColor="@color/FFFFFF" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentRight="true"
-               android:layout_below="@+id/qian"
-               android:layout_marginRight="@dimen/dp_8"
-               android:text="赢取奖金 >>"
-               android:textColor="@color/FFFFFF"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/qian"
+                android:layout_marginRight="@dimen/dp_8"
+                android:text="赢取奖金 >>"
+                android:textColor="@color/FFFFFF"
 
-               android:textSize="@dimen/sp_13" />
-       </RelativeLayout>
-  </android.support.v7.widget.CardView>
+                android:textSize="@dimen/sp_13" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_200"
-        app:cardCornerRadius="@dimen/dp_10"
         android:layout_marginTop="@dimen/sp_20"
+        app:cardCornerRadius="@dimen/dp_10"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -129,137 +127,136 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <RelativeLayout
-            android:id="@+id/heads_card"
-            android:layout_width="match_parent"
-            android:layout_margin="@dimen/dp_10"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/card_image"
-                android:layout_width="@dimen/dp_25"
-                android:layout_height="@dimen/dp_25"
-                android:src="@drawable/icon_me_kaquan"/>
+            <RelativeLayout
+                android:id="@+id/heads_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10">
 
-            <TextView
-                android:layout_toRightOf="@id/card_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/card"
-                android:layout_marginLeft="@dimen/dp_10"
-                />
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text=">"
-                />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/icon_me_kaquan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/card_image"
+                    android:text="@string/card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=">" />
+            </RelativeLayout>
 
             <View
-                android:background="@color/FFCDCDCE"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_1"
-                android:layout_above="@id/main_tablay"/>
+                android:layout_above="@id/main_tablay"
+                android:background="@color/FFCDCDCE" />
 
-        <RelativeLayout
-            android:id="@+id/heads_stroke"
-            android:layout_width="match_parent"
-            android:layout_margin="@dimen/dp_10"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/card_stroke"
-                android:layout_width="@dimen/dp_25"
-                android:layout_height="@dimen/dp_25"
-                android:src="@drawable/icon_me_yigou"/>
-
-            <TextView
-                android:layout_toRightOf="@id/card_stroke"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:id="@+id/heads_stroke"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/stroke"
-                android:layout_marginLeft="@dimen/dp_10"
-                />
+                android:layout_margin="@dimen/dp_10">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text=">"
-                />
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/card_stroke"
+                    android:layout_width="@dimen/dp_25"
+                    android:layout_height="@dimen/dp_25"
+                    android:src="@drawable/icon_me_yigou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/card_stroke"
+                    android:text="@string/stroke" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=">" />
+            </RelativeLayout>
+
             <View
-                android:background="@color/FFCDCDCE"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_1"
-                android:layout_above="@id/main_tablay"/>
+                android:layout_above="@id/main_tablay"
+                android:background="@color/FFCDCDCE" />
+
             <RelativeLayout
                 android:id="@+id/heads_collect"
                 android:layout_width="match_parent"
-                android:layout_margin="@dimen/dp_10"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10">
+
                 <ImageView
                     android:id="@+id/card_collect"
                     android:layout_width="@dimen/dp_25"
                     android:layout_height="@dimen/dp_25"
-                    android:src="@drawable/icon_me_shoucang"/>
+                    android:src="@drawable/icon_me_shoucang" />
 
                 <TextView
-                    android:layout_toRightOf="@id/card_collect"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/wand"
                     android:layout_marginLeft="@dimen/dp_10"
-                    />
+                    android:layout_toRightOf="@id/card_collect"
+                    android:text="@string/wand" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text=">"
-                    />
+                    android:text=">" />
             </RelativeLayout>
 
             <View
-                android:background="@color/FFCDCDCE"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_1"
-                android:layout_above="@id/main_tablay"/>
+                android:layout_above="@id/main_tablay"
+                android:background="@color/FFCDCDCE" />
+
             <RelativeLayout
                 android:id="@+id/heads_atten"
                 android:layout_width="match_parent"
-                android:layout_margin="@dimen/dp_10"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10">
+
                 <ImageView
                     android:id="@+id/card_atten"
                     android:layout_width="@dimen/dp_25"
                     android:layout_height="@dimen/dp_25"
-                    android:src="@drawable/icon_me_guanzhu"/>
+                    android:src="@drawable/icon_me_guanzhu" />
 
                 <TextView
                     android:id="@+id/atten_zhanwus"
-                    android:layout_toRightOf="@id/card_atten"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/atten"
                     android:layout_marginLeft="@dimen/dp_10"
-                    />
+                    android:layout_toRightOf="@id/card_atten"
+                    android:text="@string/atten" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text=">"/>
+                    android:text=">" />
 
                 <TextView
                     android:id="@+id/atten_zhanwu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:textColor="#ff0073"
-                    android:textSize="@dimen/sp_15"
                     android:text="暂无"
-                    />
+                    android:textColor="#ff0073"
+                    android:textSize="@dimen/sp_15" />
             </RelativeLayout>
 
 
@@ -272,55 +269,58 @@
         android:layout_height="wrap_content"
 
         >
+
         <ImageView
             android:id="@+id/serviceimage"
             android:layout_width="@dimen/dp_25"
             android:layout_height="@dimen/dp_25"
             android:layout_alignParentBottom="true"
-            android:src="@drawable/icon_me_kefu"/>
+            android:src="@drawable/icon_me_kefu" />
+
         <TextView
             android:id="@+id/heads_service"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/services"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_5"
             android:layout_toRightOf="@id/serviceimage"
-            android:layout_marginLeft="@dimen/dp_5"/>
+            android:text="@string/services" />
 
 
         <ImageView
             android:id="@+id/Feedbackimage"
             android:layout_width="@dimen/dp_25"
             android:layout_height="@dimen/dp_25"
-            android:src="@drawable/icon_me_fankui"
             android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_10"
             android:layout_toRightOf="@id/heads_service"
-            android:layout_marginLeft="@dimen/dp_10"/>
+            android:src="@drawable/icon_me_fankui" />
+
         <TextView
             android:id="@+id/heads_feedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@id/Feedbackimage"
             android:layout_marginLeft="@dimen/dp_5"
-            android:text="@string/feedback"/>
+            android:layout_toRightOf="@id/Feedbackimage"
+            android:text="@string/feedback" />
 
         <ImageView
             android:id="@+id/Detectionimage"
             android:layout_width="@dimen/dp_25"
             android:layout_height="@dimen/dp_25"
-            android:layout_marginRight="@dimen/dp_5"
             android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_5"
             android:layout_toLeftOf="@id/heads_detection"
-            android:src="@drawable/icon_me_banben"
-            />
+            android:src="@drawable/icon_me_banben" />
+
         <TextView
             android:id="@+id/heads_detection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:text="@string/detection"/>
+            android:text="@string/detection" />
     </RelativeLayout>
 
 </LinearLayout>
