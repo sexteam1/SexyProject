@@ -5,7 +5,7 @@
     android:orientation="vertical"
     tools:context="com.example.lenovo.studio_c.fragment.Fragments.AttentionFragment">
 
-    <android.support.v7.widget.Toolbar
+<!--    <android.support.v7.widget.Toolbar
         android:id="@+id/atten_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -24,7 +24,7 @@
             android:layout_gravity="right"
             android:layout_margin="@dimen/dp_5"
             android:background="@drawable/icon_me_kefu_emial" />
-    </android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.Toolbar>-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/atten_rlv"

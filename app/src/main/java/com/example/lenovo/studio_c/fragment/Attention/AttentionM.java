@@ -7,8 +7,5 @@ import retrofit2.Retrofit;
  */
 
 public class AttentionM {
-/*        Retrofit mRetrofit=new Retrofit.Builder()
-                .baseUrl()*/
-
 
 }

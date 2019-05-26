@@ -32,11 +32,17 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.6.1'//glide图片加载框架
     implementation 'com.android.support:design:27.1.1'//TabLayout控件
     implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.squareup.retrofit2:retrofit:2.4.0'//Retrofit依赖
+  //  implementation 'com.squareup.retrofit2:retrofit:2.4.0'//Retrofit依赖
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.android.support:cardview-v7:27.1.1'//卡片布局
-    implementation "io.reactivex.rxjava2:rxjava:2.1.3" // 必要rxjava2依赖
+   // implementation "io.reactivex.rxjava2:rxjava:2.1.3" // 必要rxjava2依赖
     implementation "io.reactivex.rxjava2:rxandroid:2.0.1" // 必要rxandrroid依赖，切线程时需要用到
     implementation 'de.hdodenhof:circleimageview:2.1.0'    //开源项目，实现图片圆形化
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'//转换器，请求结果转换成Model
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'//配合Rxjava 使用
+
 }
