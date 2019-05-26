@@ -19,8 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CouponActivity"></activity>
-        <activity android:name=".activity.CouponDetailActivity"/>
+        <activity android:name=".activity.CouponActivity" />
+        <activity android:name=".activity.CouponDetailActivity" />
+        <activity android:name=".activity.FeedbackActivity"></activity>
     </application>
 
 </manifest>

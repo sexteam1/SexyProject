@@ -37,7 +37,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
 
-//jjjjjjjjj
+    //jjjjjjjjj
     @BindView(R.id.mains_tooblar)
     Toolbar mMainTooblar;
     @BindView(R.id.main_fragment)
@@ -200,7 +200,7 @@ public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
             case R.id.heads_relati:
                 break;
             case R.id.heads_card:
-                Intent intent = new Intent(this,CouponActivity.class);
+                Intent intent = new Intent(this, CouponActivity.class);
                 startActivity(intent);
                 break;
             case R.id.heads_stroke:
@@ -212,6 +212,7 @@ public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
             case R.id.heads_service:
                 break;
             case R.id.heads_feedback:
+                startActivity(new Intent(this, FeedbackActivity.class));
                 break;
             case R.id.heads_detection:
                 break;

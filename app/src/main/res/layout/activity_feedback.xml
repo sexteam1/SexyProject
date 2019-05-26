@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.studio_c.activity.FeedbackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/money_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:background="@mipmap/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="意见反馈" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/feed_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@drawable/ed_shape"
+        android:hint="请留下意见反馈" />
+
+    <Button
+        android:id="@+id/feed_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_100"
+        android:background="@drawable/shape"
+        android:text="提交" />
+</LinearLayout>

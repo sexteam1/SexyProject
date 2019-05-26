@@ -52,5 +52,5 @@ public class CouponFragment extends Fragment {
         mMoneyRlv.setLayoutManager(new LinearLayoutManager(getContext()));
         CouponRlvAdapter adapter = new CouponRlvAdapter(getContext(), mList);
         mMoneyRlv.setAdapter(adapter);
-}
+    }
 }
