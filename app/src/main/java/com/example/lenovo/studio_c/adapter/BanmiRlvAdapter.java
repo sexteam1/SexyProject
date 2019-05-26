@@ -47,7 +47,7 @@ public class BanmiRlvAdapter extends RecyclerView.Adapter {
         holder1.mType.setText(bean.getOccupation());
         holder1.mNum.setText("200人关注");
     }
-
+//jj
     @Override
     public int getItemCount() {
         return mList.size();
