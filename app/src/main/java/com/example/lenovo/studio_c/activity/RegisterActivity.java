@@ -9,8 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lenovo.studio_c.R;
+import com.example.lenovo.studio_c.bean.CodeResult;
+
+import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,6 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
     @BindView(R.id.tv_name)
     TextView tvName;
 
+    private ArrayList<CodeResult> list;
+    private CodeResult num;
     /*UMAuthListener authListener = new UMAuthListener() {
      *//**
      * @desc 授权开始的回调
@@ -74,22 +80,33 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
         initView();
+        initData();
+    }
+
+    private void initData() {
+        list=new ArrayList<>();
+
+        num = new CodeResult("9874");
+
     }
 
     private void initView() {
+        final String etphone = etPhone.getText().toString();
         btnSendVerif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this, CodeActivity.class);
+
+                if (!TextUtils.isEmpty(etphone)) {
+                    btnSendVerif.setBackgroundResource(R.drawable.button_unavailable);
+                } else {
+                    btnSendVerif.setBackgroundResource(R.drawable.button_highlight);
+                }
+
+                Intent intent = new Intent(RegisterActivity.this,CodeActivity.class);
+                intent.putExtra("9874",num);
                 startActivity(intent);
             }
         });
-        if (!TextUtils.isEmpty(etPhone.getText().toString())) {
-            btnSendVerif.setBackgroundResource(R.drawable.button_unavailable);
-        } else {
-            btnSendVerif.setBackgroundResource(R.drawable.button_highlight);
-        }
-
     }
 
     @OnClick({R.id.btn_send_verif, R.id.um_wechat, R.id.tv_name})

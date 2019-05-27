@@ -194,8 +194,12 @@ public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
             case R.id.main_toobla_avatar:
                 break;
             case R.id.main_toobla_envelope:
+                Intent intent4 = new Intent(MainActivity.this, MessageActivity.class);
+                startActivity(intent4);
                 break;
             case R.id.main_toobla_bell:
+                Intent intent1 = new Intent(MainActivity.this, NotificationActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.heads_relati:
                 break;
@@ -204,8 +208,12 @@ public class MainActivity extends BaseActivity<MainV, MainP> implements MainV {
                 startActivity(intent);
                 break;
             case R.id.heads_stroke:
+                Intent intent2 = new Intent(MainActivity.this, AlreadyActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.heads_collect:
+                Intent intent3 = new Intent(MainActivity.this, CollectActivity.class);
+                startActivity(intent3);
                 break;
             case R.id.heads_atten:
                 break;

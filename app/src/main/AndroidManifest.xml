@@ -12,13 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.CodeActivity" />
+        <activity android:name=".activity.WechatActivity" />
+        <activity android:name=".activity.CouponActivity" />
+        <activity android:name=".activity.CouponDetailActivity" />
+        <activity android:name=".activity.Al" />
+        <activity android:name=".activity.AlreadyActivity" />
+        <activity android:name=".activity.CollectActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.MessageActivity"></activity>
         <activity android:name=".activity.CouponActivity" />
         <activity android:name=".activity.CouponDetailActivity" />
         <activity android:name=".activity.FeedbackActivity"></activity>
